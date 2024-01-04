@@ -10,9 +10,9 @@ sync—to-hub :
     runs—on: ubuntu—latest
     steps:
        — uses: actions/checkout@v2
-         with:
+    with:
             fetch—depth: 0
-       — name: Push to hub
-         env:
+    — name: Push to hub
+    env:
            HF_TOKEN: ${{secrets.HF_TOKEN}}
-         run: git push --force https://Khushter:$HF_TOKEN@huggingface.co/spaces/Khushter/myhuggingface main
+    run: git push --force https://Khushter:$HF_TOKEN@huggingface.co/spaces/Khushter/myhuggingface main
