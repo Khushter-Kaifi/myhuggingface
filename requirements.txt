@@ -1,3 +1,7 @@
 streamlit
 transformers
 torch
+opencv—python—headless
+numpy
+easyocr
+Pillow
