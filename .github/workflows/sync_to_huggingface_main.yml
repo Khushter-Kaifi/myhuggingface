@@ -1,5 +1,4 @@
 name: Sync to Hugging Face hub
-
 on:
   push:
      branches: [main]
@@ -16,4 +15,4 @@ sync—to-hub :
        — name: Push to hub
          env:
            HF_TOKEN: ${{secrets.HF_TOKEN}}
-         run: git push https://Khushter:$HF_TOKEN@huggingface.co/spaces/Khushter/myhuggingface main
+         run: git push --force https://Khushter:$HF_TOKEN@huggingface.co/spaces/Khushter/myhuggingface main
